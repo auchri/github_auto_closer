@@ -9,8 +9,5 @@
         <module name="github_auto_closer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="github_auto_closer" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -27,8 +27,16 @@ public class Logger {
         }
     }
 
+    public static void log(Level level, String format, Object... args) {
+        log(level, String.format(format, args));
+    }
+
     public static void log(Level level, String message) {
         log(level, null, message);
+    }
+
+    public static void log(Level level, Throwable e, String format, Object... args) {
+        log(level, e, String.format(format, args));
     }
 
     public static void log(Level level, Throwable e, String message) {
