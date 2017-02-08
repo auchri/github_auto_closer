@@ -1,6 +1,8 @@
 # GitHub Auto Closer
 Closes inactive issues on [GitHub](https://github.com).
 
+![Preview of an closed issue](https://github.com/auchri/github_auto_closer/blob/develop/docs/image.png)
+
 ## Usage
 Get the jar file (from the [releases page](https://github.com/auchri/github_auto_closer/releases) or by [building](https://github.com/auchri/github_auto_closer/blob/develop/README.md#building) the program by yourself.
 
@@ -22,4 +24,4 @@ Then execute the jar: `java -jar github_auto_closer_1.0.jar -o oauth_key -n name
 
 ## Building
 
-> ToDo
+Navigate to the directory containing the project files and execute `mvn install`.
