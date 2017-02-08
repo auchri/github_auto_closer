@@ -23,7 +23,7 @@ class GitHubAutoCloser {
 
     private static final String CLOSE_MESSAGE = "Hey there!\n" +
             "\n" +
-            "We're automatically closing this issue since the original poster (or another commenter) hasn't yet responded to the question or request made to them %1$d days ago. We therefore assume that the user has lost interest or resolved the problem on their own. Closed issues that remain inactive for a long period may get automatically locked.\n" +
+            "We're automatically closing this issue since there was no activity in this issue since %1$d days ago. We therefore assume that the user has lost interest or resolved the problem on their own. Closed issues that remain inactive for a long period may get automatically locked.\n" +
             "\n" +
             "Don't worry though; if this is in error, let us know with a comment and we'll be happy to reopen the issue.\n" +
             "\n" +
