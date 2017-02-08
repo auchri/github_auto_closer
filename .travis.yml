@@ -1,8 +1,17 @@
 language: java
 
+#dist: trusty
+#sudo: false
+
 jdk:
   - openjdk7
   - oraclejdk7
+  - oraclejdk8
+
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
 
 cache:
   directories:
