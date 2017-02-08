@@ -26,4 +26,4 @@ Then execute the jar: `java -jar github_auto_closer_1.0.jar -o oauth_key -n name
 
 ## Building
 
-Navigate to the directory containing the project files and execute `mvn install`.
+Navigate to the directory containing the project files and execute `mvn clean compile assembly:single`.
