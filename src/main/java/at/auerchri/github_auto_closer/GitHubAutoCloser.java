@@ -6,11 +6,7 @@ import org.eclipse.egit.github.core.RepositoryId;
 import org.eclipse.egit.github.core.client.GitHubClient;
 import org.eclipse.egit.github.core.service.IssueService;
 
-import java.time.ZonedDateTime;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -83,7 +79,7 @@ class GitHubAutoCloser {
                 continue;
             }
 
-            long difference = ZonedDateTime.now().toInstant().toEpochMilli() - issue.getUpdatedAt().toInstant().toEpochMilli();
+            long difference = new Date().getTime() - issue.getUpdatedAt().getTime();
             long daysWithoutActivity = TimeUnit.MILLISECONDS.toDays(difference);
 
             if (daysWithoutActivity >= mDaysWithInactivity) {

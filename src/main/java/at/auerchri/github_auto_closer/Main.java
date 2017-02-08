@@ -2,7 +2,7 @@ package at.auerchri.github_auto_closer;
 
 import org.apache.commons.cli.*;
 
-public class Main {
+class Main {
     private static final String OPTION_DEBUG_SHORT = "x";
     private static final String OPTION_DEBUG_LONG = "debug";
 
