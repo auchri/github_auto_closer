@@ -1,7 +1,8 @@
 # GitHub Auto Closer
-Closes inactive issues on [GitHub](https://github.com).
+Closes inactive issues on [GitHub](https://github.com). [![Build Status](https://travis-ci.org/auchri/github_auto_closer.svg?branch=master)](https://travis-ci.org/auchri/github_auto_closer)
 
-![Preview of an closed issue](https://github.com/auchri/github_auto_closer/blob/develop/docs/image.png)
+Preview:
+![Preview of an closed issue](https://github.com/auchri/github_auto_closer/blob/develop/docs/preview.png)
 
 ## Usage
 Get the jar file (from the [releases page](https://github.com/auchri/github_auto_closer/releases) or by [building](https://github.com/auchri/github_auto_closer/blob/develop/README.md#building) the program by yourself.
