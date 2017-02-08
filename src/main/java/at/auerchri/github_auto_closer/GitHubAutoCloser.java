@@ -162,8 +162,8 @@ class GitHubAutoCloser {
         issue.setState(STATE_CLOSED);
 
         try {
-            issueService.editIssue(repositoryId, issue);
             issueService.createComment(repositoryId, issue.getNumber(), message);
+            issueService.editIssue(repositoryId, issue);
 
             Logger.log(Logger.Level.INFO, "Closed issue %1$d (%2$s)", issue.getNumber(), issue.getTitle());
         } catch (Exception e) {
