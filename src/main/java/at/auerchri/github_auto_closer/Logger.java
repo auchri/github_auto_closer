@@ -1,16 +1,16 @@
 package at.auerchri.github_auto_closer;
 
-public class Logger {
-    private static Level sMinLogLevel = Level.WARN;
+class Logger {
+    private static Level sMinLogLevel = Level.INFO;
 
-    public static void setMinLogLevel(Level minLogLevel) {
+    static void setMinLogLevel(Level minLogLevel) {
         sMinLogLevel = minLogLevel;
     }
 
     enum Level {
-        DEBUG(10), WARN(20), ERROR(30);
+        DEBUG(10), INFO(20), ERROR(30);
 
-        private int mNum;
+        private final int mNum;
 
         Level(int num) {
             mNum = num;
@@ -27,19 +27,19 @@ public class Logger {
         }
     }
 
-    public static void log(Level level, String format, Object... args) {
+    static void log(Level level, String format, Object... args) {
         log(level, String.format(format, args));
     }
 
-    public static void log(Level level, String message) {
+    static void log(Level level, String message) {
         log(level, null, message);
     }
 
-    public static void log(Level level, Throwable e, String format, Object... args) {
+    static void log(Level level, Throwable e, String format, Object... args) {
         log(level, e, String.format(format, args));
     }
 
-    public static void log(Level level, Throwable e, String message) {
+    static void log(Level level, Throwable e, String message) {
         if (level.isLowerThan(sMinLogLevel)) {
             return;
         }
@@ -60,10 +60,7 @@ public class Logger {
     }
 
     private static String getThrowableMessage(Throwable throwable) {
-//        if (throwable instanceof HttpException) {
-//            return ((HttpException) throwable).getResponseMessage();
-//        }
-
+        // TODO Get message from GitHub exception
         return throwable.getMessage();
     }
 }
