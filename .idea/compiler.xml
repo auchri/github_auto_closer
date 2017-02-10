@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="github_auto_closer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="github_auto_closer" target="1.8" />
+      <module name="github_auto_closer_main" target="1.8" />
+      <module name="github_auto_closer_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

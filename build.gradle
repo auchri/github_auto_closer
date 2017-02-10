@@ -1,0 +1,30 @@
+apply plugin: 'java'
+
+group = 'at.auerchri'
+version = '1.0.1-SNAPSHOT'
+
+description = ""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+//create a single Jar with all dependencies
+jar {
+    manifest {
+        attributes 'Main-Class': 'at.auerchri.github_auto_closer.Main'
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+    destinationDir = file("$rootDir/out")
+}
+
+repositories {
+    maven { url "https://repo.eclipse.org/content/groups/releases/" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile group: 'org.eclipse.mylyn.github', name: 'org.eclipse.egit.github.core', version: '4.6.0.201612231935-r'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.2.2'
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.3.1'
+}

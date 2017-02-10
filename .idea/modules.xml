@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/github_auto_closer.iml" filepath="$PROJECT_DIR$/github_auto_closer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/github_auto_closer.iml" filepath="$PROJECT_DIR$/.idea/modules/github_auto_closer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/github_auto_closer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/github_auto_closer_main.iml" group="github_auto_closer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/github_auto_closer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/github_auto_closer_test.iml" group="github_auto_closer" />
     </modules>
   </component>
 </project>

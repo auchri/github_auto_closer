@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="github_auto_closer:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="at.auerchri" external.system.module.type="sourceSet" external.system.module.version="1.0.1-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output-test url="file://$MODULE_DIR$/../../build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="github_auto_closer_main" />
+    <orderEntry type="library" name="Gradle: org.eclipse.mylyn.github:org.eclipse.egit.github.core:4.6.0.201612231935-r" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: commons-cli:commons-cli:1.3.1" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="github_auto_closer_main" />
+</module>
